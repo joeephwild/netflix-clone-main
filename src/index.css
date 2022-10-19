@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Beue;
+  src: url('./fonts/BebasNeue-Regular.ttf');
+}
+
+body {
+  @apply bg-black w-[100%] h-[100vh] text-white  !scrollbar-thin !scrollbar-thumb-red-900 !scrollbar-track-transparent;
+}
+
+
+.navblack{
+  background-color: black;
+}
