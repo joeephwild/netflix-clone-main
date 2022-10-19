@@ -25,14 +25,14 @@ function MovieDetails() {
       <Link to="/">
       <AiOutlineArrowLeft className="text-4xl absolute top-0 left-0 text-white font-bold" />
       </Link>
-      <BsFillVolumeUpFill className="text-4xl absolute bottom-4 right-0 text-white font-bold" />
+      <BsFillVolumeUpFill className="text-4xl absolute bottom-36 lg:bottom-4 right-0 text-white font-bold" />
       <div className="" />
       <img className="w-full relative h-[450px] object-cover opacity-25" src={`https://image.tmdb.org/t/p/original${currentMovie.poster_path}`} />
       <div className="absolute top-[38%] left-[47%] border-2 border-red-500 p-6 transition ease-in-out duration-150 hover:scale-105 cursor-pointer rounded-full">
         <FaPlay size={45} />
       </div>
       <div className="flex flex-col items-center mt-9">
-        <span className="text-6xl absolute bottom-0 left-7  font-black font-Beue">{currentMovie.title}</span>
+        <span className="lg:text-6xl text-3xl absolute bottom-40  lg:bottom-0 left-7  font-black font-Beue">{currentMovie.title}</span>
       </div>
       <div className="mx-auto items-center flex flex-col space-y-4">
       <button type="button" className="bg-red-600 text-white px-9 py-2.5 space-x-4 w-[80%] text-center mx-auto flex justify-center items-center">
@@ -43,9 +43,9 @@ function MovieDetails() {
         <HiDownload size={25} />
         <span>Download</span>
       </button>
-      <div className="md:flex flex-col items-center justify-around gap-5 ">
-      <span className="text-lg font-medium w-[70%]  font-Beue tracking-widest text-center justif-center items-center flex">{currentMovie.overview}</span>
-      <div className="flex space-x-9 items-center">
+      <div className="md:flex flex-col items-center justify-center ">
+      <span className="text-lg font-medium lg:w-[70%]  font-Beue tracking-widest text-center justify-center items-center flex">{currentMovie.overview}</span>
+      <div className="flex space-x-9 justify-center items-center">
         <div className="flex items-center flex-col font-Beue">
            <AiOutlinePlus className="text-3xl" />
           <span>
