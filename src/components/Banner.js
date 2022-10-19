@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { AiOutlinePlayCircle, AiOutlinePlus, AiOutlineInfoCircle } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineInfoCircle } from "react-icons/ai";
+import { FaPlay } from "react-icons/fa";
 import { StarIcon } from "@heroicons/react/solid";
 import requests from "../utils/requests";
 
@@ -34,16 +35,19 @@ function Banner() {
 
             <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%]">{movie?.overview}</p>
             <div className="my-4">
-              <div className="text-red-600 animate-pulse flex space-x-12">
+              <div className="text-red-600  flex space-x-12">
                 <button className="flex-col pr-4" type="button">
                   <AiOutlineInfoCircle size={25} /> More Info
                 </button>
                 <button className="text-white font-bold flex items-center bg-red-600 rounded-lg px-5 py-2" type="button">
-                  <AiOutlinePlayCircle size={25} /> play
+                  <FaPlay size={25} /> play
                 </button>
-                <button className="flex-col px-4" type="button">
-                  <AiOutlinePlus size={25} /> MyList
-                </button>
+                <div className="flex items-center flex-col font-Beue">
+                   <AiOutlinePlus className="text-3xl" />
+                <span>
+                  List
+                </span>
+        </div>
               </div>
             </div>
           </div>

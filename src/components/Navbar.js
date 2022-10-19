@@ -3,7 +3,7 @@ import { MdCastConnected, MdOutlineSearch } from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "../fonts/netflix.svg";
 import { UserAuth } from "../utils/AuthContext";
-import img1 from "../fonts/img1.png";
+import avatar2 from "../fonts/avatar2.png";
 
 function Navbar() {
   const { user } = UserAuth();
@@ -50,7 +50,7 @@ function Navbar() {
             <MdCastConnected size={25} />
             <MdOutlineSearch className="hidden md:block" size={25} />
             <Link to="/account">
-              <img src={img1} lt="" className="h-8 w-8 object-contain" />
+              <img src={avatar2} lt="" className="h-8 w-8 object-contain" />
             </Link>
           </div>
         ) : (

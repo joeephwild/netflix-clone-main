@@ -3,10 +3,12 @@ import { AiOutlinePlayCircle, AiOutlinePlus, AiOutlineInfoCircle } from "react-i
 import requests from "../utils/requests";
 import Banner from "../components/Banner";
 import Row from "../components/Row";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <div>
+    <Navbar />
       <Banner />
       <div className="flex  mt-20 bg-transparent left-10 text-lg font-Beue font-bold absolute top-8 md:hidden space-x-16 justify-between">
         <span>Tv Shows</span>

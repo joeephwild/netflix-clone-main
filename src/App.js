@@ -4,7 +4,6 @@ import { AuthContextProvider } from "./utils/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 // components import using codeslitting to optimize the react app
-const Navbar = lazy(() => import("./components/Navbar"));
 const Home = lazy(() => import("./pages/Home"));
 const MobileNav = lazy(() => import("./components/MobileNav"));
 const SignUp = lazy(() => import("./pages/SignUp"));
@@ -16,7 +15,6 @@ function App() {
   return (
     <AuthContextProvider>
       <Suspense fallback={<div>loading......</div>}>
-        <Navbar />
         <MobileNav />
         <Routes>
           <Route index element={<Home />} />

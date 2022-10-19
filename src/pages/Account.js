@@ -1,5 +1,6 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { useNavigate, Link } from 'react-router-dom';
 import { UserAuth } from '../utils/AuthContext';
 import { Data } from '../utils/ProfileData';
 
@@ -16,10 +17,14 @@ function Account() {
     }
   };
   return (
-    <div className="flex flex-col items-center justify-center space-y-5">
+    <div className="relative">
+      <Link to="/">
+      <AiOutlineArrowLeft className="text-4xl absolute top-0 left-0 text-white font-bold" />
+      </Link>
+    <div className="flex flex-col items-center overflow-x-hidden justify-center space-y-5">
       <div className="flex mt-20 space-x-5  items-center">
         {Data.map((index, id) => (
-            <div key={id} className="justify-around !border-2 !rounded-full flex ">
+            <div key={id} className="justify-around hover:scale-105 transition duration-500 ease-in-out !rounded-full flex ">
               <img src={index.image} alt="" className="md:w-36 w-16 h-16 md:h-36  object-cover" />
             </div>
         ))};
@@ -33,6 +38,7 @@ function Account() {
       >
         Logout
       </button>
+    </div>
     </div>
   );
 }
