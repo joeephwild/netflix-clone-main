@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import Movies from './Movies';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import Movies from "./Movies";
 
 function Row({ title, rowID, fetchURL, isLarge }) {
   const [movies, setMovies] = useState([]);
@@ -29,7 +29,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
         <MdChevronLeft
           onClick={slideLeft}
           size={40}
-          className="bg-black/30 text-red-600 h-full left-0 rounded-full absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
+          className="bg-black/50 text-red-600 h-full left-0  absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
         />
         <div
           id={`slider${rowID}`}
@@ -42,7 +42,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
         <MdChevronRight
           onClick={slideRight}
           size={40}
-          className="bg-white text-red-600 right-0 rounded-full absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
+          className="bg-black/50 text-red-600 h-full right-0  absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
         />
       </div>
     </>
