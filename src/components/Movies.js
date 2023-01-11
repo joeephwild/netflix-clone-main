@@ -59,7 +59,7 @@ function Movies({ movie, large }) {
     <div className="pl-6 relative w-[250px] ">
       <div onClick={() => handleClick(movie)}>
         <img
-          className={`max-w-[120px] h-[200px] hover:scale-95 transition-all ease-in-out block object-cover rounded-br-lg rounded-tl-lg ${
+          className={`max-w-[120px] h-[200px] cursor-pointer hover:scale-95 transition-all ease-in-out block object-cover rounded-br-lg rounded-tl-lg ${
             large && "h-[400px] max-w-[200px]"
           }`}
           src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
