@@ -78,7 +78,7 @@ function Movies({ movie, large }) {
           <button
             onClick={close}
             type="button"
-            className="bg-red-600 text-xl text-white rounded-full absolute top-0"
+            className="bg-red-600 p-4 text-xl text-white rounded-full absolute top-0"
           >
             <AiOutlineClose />
           </button>
