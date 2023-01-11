@@ -30,9 +30,9 @@ function Movies({ movie, large }) {
   };
   return (
     <div className="pl-6 relative w-[250px] ">
-      <Link to={`/movie/${movie.id}`}>
-        <img className={`max-w-[120px] h-[200px] block object-cover rounded-br-lg rounded-tl-lg ${large && "h-[400px]"}`} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-      </Link>
+      <>
+        <img className={`max-w-[120px] h-[200px] block object-cover rounded-br-lg rounded-tl-lg ${large && "h-[400px] max-w-[190px]"}`} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+      </>
       <div onClick={saveShow} className="absolute bg-red-600 rounded-br-lg top-0 p-2 right-o text-white">
         {like ? <AiFillHeart size={15} /> : <FaRegHeart size={15} />}
       </div>

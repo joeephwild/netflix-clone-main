@@ -29,7 +29,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
         <MdChevronLeft
           onClick={slideLeft}
           size={40}
-          className="bg-white text-red-600 left-0 rounded-full absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
+          className="bg-black/30 text-red-600 h-full left-0 rounded-full absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
         />
         <div
           id={`slider${rowID}`}
