@@ -23,7 +23,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
   };
 
   return (
-    <>
+    <div>
       <h1 className="font-bold font-Beue md:text-2xl text-xl m-3">{title}</h1>
       <div className="relative flex items-center group">
         <MdChevronLeft
@@ -45,7 +45,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
           className="bg-black/50 text-red-600 h-full right-0  absolute hover:opacity-100 cursor=pointer z-10 hidden group-hover:block"
         />
       </div>
-    </>
+    </div>
   );
 }
 

@@ -50,7 +50,7 @@ function Navbar() {
             <MdCastConnected size={25} />
             <MdOutlineSearch className="hidden md:block" size={25} />
             <Link to="/account">
-              <img src={avatar2} lt="" className="h-8 w-8 object-contain" />
+              <img src={avatar2} lt="" className="h-6 w-6 rounded-full object-cover" />
             </Link>
           </div>
         ) : (

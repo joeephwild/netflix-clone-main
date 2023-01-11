@@ -68,11 +68,13 @@ module.exports = {
     'jsx-a11y/alt-text': 0,
     'jsx-a11y/no-autofocus': 0,
     'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/no-noninteractive-element-interactions': false,
     'react/no-array-index-key': 0,
     quotes: 0,
     'no-console': 0,
     'no-shadow': 0,
     'react/jsx-no-constructed-context-values': 0,
+    'arrow-parens': 0,
     'operator-assignment': 0,
     'react/jsx-closing-tag-location': 0,
     'jsx-a11y/anchor-is-valid': [
