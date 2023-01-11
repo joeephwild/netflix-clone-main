@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { db } from "../firebase";
 import { UserAuth } from "../utils/AuthContext";
 
-function Movies({ movie }) {
+function Movies({ movie, large }) {
   const [like, setLike] = useState(false);
   const [saved, setSaved] = useState(false);
   const { user } = UserAuth();
@@ -31,7 +31,7 @@ function Movies({ movie }) {
   return (
     <div className="pl-6 relative w-[250px] ">
       <Link to={`/movie/${movie.id}`}>
-        <img className="max-w-[120px] h-[200px] block object-cover rounded-br-lg rounded-tl-lg" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+        <img className={`max-w-[120px] h-[200px] block object-cover rounded-br-lg rounded-tl-lg ${large && "h-[400px]"}`} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
       </Link>
       <div onClick={saveShow} className="absolute bg-red-600 rounded-br-lg top-0 p-2 right-o text-white">
         {like ? <AiFillHeart size={15} /> : <FaRegHeart size={15} />}

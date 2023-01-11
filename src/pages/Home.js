@@ -33,7 +33,7 @@ function Home() {
         <Row rowID="3" title="Top Rated" fetchURL={requests.fetchTopRated} />
       </div>
       <div>
-        <Row rowID="2" title="Only on Netflix" fetchURL={requests.fetchNetflixOriginals} />
+        <Row isLarge rowID="2" title="Only on Netflix" fetchURL={requests.fetchNetflixOriginals} />
       </div>
       <div className="">
         <Row rowID="4" title="Get in on the Action" fetchURL={requests.fetchActionMovies} />

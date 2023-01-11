@@ -3,7 +3,7 @@ import axios from 'axios';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import Movies from './Movies';
 
-function Row({ title, rowID, fetchURL }) {
+function Row({ title, rowID, fetchURL, isLarge }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function Row({ title, rowID, fetchURL }) {
           className="flex scrollbar-hide overflow-y-hidden w-full h-full relative scroll-smooth whitespace-nowrap"
         >
           {movies.map((movie, id) => (
-            <Movies movie={movie} key={movie.id} />
+            <Movies large={isLarge} movie={movie} key={movie.id} />
           ))}
         </div>
         <MdChevronRight
