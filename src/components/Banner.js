@@ -22,31 +22,28 @@ function Banner() {
         <div className="w-full h-full">
           <div className="w-full h-full absolute g-gradient-to-t from-black to-transparent z-[20] top-0" />
           <div className="w-full h-full absolute g-gradient-to-b md:hidden block from-black to-transparent z-[20] top-0" />
-          <img className="hidden lg:block w-full lg:h-[800px] h-full md:opacity-25 object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
-          <img className="lg:hidden w-full h-full  object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
+          <img className="hidden lg:block w-full lg:h-[800px] xl:h-[950px] h-full md:opacity-25 object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
+          <img className="object-cover w-full h-full lg:hidden" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
           <div className="absolute font-Beue hidden lg:grid   w-full top-[30%] mb-3 p-4 md:p-8">
             <h1 className="text-red-600 w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-3xl md:text-5xl font-bold">{movie?.title || movie?.original_title || movie?.name}</h1>
             <p>Realeased: {movie?.release_date}</p>
             <div className="flex py-2">
               {[...Array(5)].map((_, i) => (
-                <StarIcon key={i} className="h-4 w-4 fill-current text-red-600" />
+                <StarIcon key={i} className="w-4 h-4 text-red-600 fill-current" />
               ))}
             </div>
 
             <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%]">{movie?.overview}</p>
             <div className="my-4">
-              <div className="text-red-600  flex space-x-12">
+              <div className="flex space-x-12 text-red-600">
                 <button className="flex-col pr-4" type="button">
-                  <AiOutlineInfoCircle size={25} /> More Info
+                  <AiOutlineInfoCircle size={25} />
                 </button>
-                <button className="text-white font-bold flex items-center bg-red-600 rounded-lg px-5 py-2" type="button">
-                  <FaPlay size={25} /> play
+                <button className="flex items-center px-5 py-2 font-bold text-white bg-red-600 rounded-lg rounded-full" type="button">
+                  <FaPlay size={25} />
                 </button>
-                <div className="flex items-center flex-col font-Beue">
-                   <AiOutlinePlus className="text-3xl" />
-                <span>
-                  List
-                </span>
+                <div className="flex flex-col items-center font-Beue">
+                   <AiOutlinePlus size={25} />
         </div>
               </div>
             </div>
