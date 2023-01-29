@@ -49,7 +49,7 @@ function Banner() {
             </div>
           </div>
         </div>
-        <img className="w-[30%] rounded-lg shadow-2xl shadow-gray-600 h-[80%] xl:h-[100%]  absolute hidden md:block top-[14%] left-[60%] object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
+        <img className="w-[30%] rounded-lg shadow-2xl shadow-gray-600 h-[80%] xl:h-[100%]  absolute hidden md:block top-[12%] left-[60%] object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
       </div>
     </div>
   );

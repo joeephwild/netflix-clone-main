@@ -24,7 +24,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
 
   return (
     <div>
-      <h1 className="font-bold font-Beue md:text-2xl text-xl m-3">{title}</h1>
+      <h1 className="m-3 text-xl font-bold font-Beue md:9text-2xl mt-">{title}</h1>
       <div className="relative flex items-center group">
         <MdChevronLeft
           onClick={slideLeft}
@@ -33,7 +33,7 @@ function Row({ title, rowID, fetchURL, isLarge }) {
         />
         <div
           id={`slider${rowID}`}
-          className="flex scrollbar-hide overflow-y-hidden w-full h-full relative scroll-smooth whitespace-nowrap"
+          className="relative flex w-full h-full overflow-y-hidden scrollbar-hide scroll-smooth whitespace-nowrap"
         >
           {movies.map((movie, id) => (
             <Movies large={isLarge} movie={movie} key={movie.id} />
