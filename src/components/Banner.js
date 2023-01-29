@@ -39,7 +39,7 @@ function Banner() {
                 <button className="flex-col pr-4" type="button">
                   <AiOutlineInfoCircle size={39} />
                 </button>
-                <button className="flex items-center p-6 font-bold text-white bg-red-600 rounded-full" type="button">
+                <button className="flex items-center p-4 font-bold text-white bg-red-600 rounded-full" type="button">
                   <FaPlay size={39} />
                 </button>
                 <div className="flex flex-col items-center font-Beue">
