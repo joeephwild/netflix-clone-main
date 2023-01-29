@@ -35,11 +35,11 @@ function Banner() {
 
             <p className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%]">{movie?.overview}</p>
             <div className="my-4">
-              <div className="flex space-x-12 text-red-600">
+              <div className="flex items-center space-x-12 text-red-600">
                 <button className="flex-col pr-4" type="button">
                   <AiOutlineInfoCircle size={25} />
                 </button>
-                <button className="flex items-center px-5 py-2 font-bold text-white bg-red-600 rounded-lg rounded-full" type="button">
+                <button className="flex items-center font-bold text-white bg-red-600 rounded-full" type="button">
                   <FaPlay size={25} />
                 </button>
                 <div className="flex flex-col items-center font-Beue">
@@ -49,7 +49,7 @@ function Banner() {
             </div>
           </div>
         </div>
-        <img className="w-[30%] rounded-lg shadow-2xl shadow-gray-600  h-[80%]  absolute hidden md:block top-[14%] left-[60%] object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
+        <img className="w-[30%] rounded-lg shadow-2xl shadow-gray-600  h-[80%] xl:h-[100px]  absolute hidden md:block top-[14%] left-[60%] object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
       </div>
     </div>
   );
