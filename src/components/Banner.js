@@ -18,14 +18,14 @@ function Banner() {
 
   return (
     <div className="">
-      <div className="w-full relative h-[700px]">
+      <div className="w-full relative h-screen">
         <div className="w-full h-full">
           <div className="w-full h-full absolute g-gradient-to-t from-black to-transparent z-[20] top-0" />
           <div className="w-full h-full absolute g-gradient-to-b md:hidden block from-black to-transparent z-[20] top-0" />
           <img className="hidden lg:block w-full lg:h-[800px] xl:h-[950px] h-full md:opacity-25 object-cover" src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
           <img className="object-cover w-full h-full lg:hidden" src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`} alt={movie?.title} />
           <div className="absolute font-Beue hidden lg:grid   w-full top-[30%] mb-3 p-4 md:p-8">
-            <h1 className="text-red-600 w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-3xl md:text-5xl font-bold">{movie?.title || movie?.original_title || movie?.name}</h1>
+            <h1 className="text-red-600 w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-3xl md:text-6xl font-bold">{movie?.title || movie?.original_title || movie?.name}</h1>
             <p>Realeased: {movie?.release_date}</p>
             <div className="flex py-2">
               {[...Array(5)].map((_, i) => (
@@ -39,7 +39,7 @@ function Banner() {
                 <button className="flex-col pr-4" type="button">
                   <AiOutlineInfoCircle size={39} />
                 </button>
-                <button className="flex items-center p-4 font-bold text-white bg-red-600 rounded-full" type="button">
+                <button className="flex items-center p-4 font-bold text-red-600 " type="button">
                   <FaPlay size={39} />
                 </button>
                 <div className="flex flex-col items-center font-Beue">

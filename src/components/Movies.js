@@ -73,7 +73,7 @@ function Movies({ movie, large }) {
         {like ? <AiFillHeart size={15} /> : <FaRegHeart size={15} />}
       </div>
       {trailerUrl && (
-        <div className="fixed bg-black/40 px-4 py-2 w-screen left-0 top-0 h-screen z-[999999]">
+        <div className="fixed bg-black/40 px-4 py-2 w-screen inset-0 h-screen z-[999999]">
           <YouTube videoId={trailerUrl} opts={opts} />
           <button
             onClick={close}
